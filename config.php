@@ -4,11 +4,6 @@
  * using mysqli_connect instead
  */
 
-$host = 'localhost';
-$database = 'admin';
-$username = 'root';
-$password = 'Ad87nm4guHB8sd';
-
-$mysqli = mysqli_connect($host, $username, $password, $database);
+$mysqli = mysqli_connect(getenv('HOST'), getenv('USERNAME'), getenv('PASSWORD'), getenv('DATABASE'));
  
 ?>
